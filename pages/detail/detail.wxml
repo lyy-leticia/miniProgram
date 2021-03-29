@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <view>{{detail._id}}</view>
+  <view>{{detail.name}}</view>
+</view>

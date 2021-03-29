@@ -1,0 +1,23 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <view class="right button" bindtap="qiuhe">云加法</view>
+  <view class="left button" bindtap="getopenid"> 获oid</view>
+  <view class="third button" bindtap="shujuku">数据库</view>
+  <view wx:for="{{datalist}}">
+    <view class="itemRoot">
+      <view>{{item.name}}</view>
+      <view>{{item._id}}</view>
+      <view>{{item.weixin}}</view>
+    </view>
+  </view>
+  <view class="fouth button" bindtap="yunhanshu"> 云函数</view>
+  <view wx:for="{{list}}" wx:key="item">
+    <view class="itemRoot" bindtap="goDetail" data-item="{{item._id}}">
+      <view>{{item.name}}</view>
+      <view>{{item._id}}</view>
+      <view>{{item.weixin}}</view>
+    </view>
+  </view>
+  <view class="right button" bindtap="upload">上传图片</view>
+  <image src="{{imgUrl}}"></image>
+</view>

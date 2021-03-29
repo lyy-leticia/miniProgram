@@ -1,0 +1,44 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.button{
+	width: 70px;
+	height: 70px;
+	line-height:70px;
+  border-radius: 20%;
+  border: none;
+  text-align:center;
+  font-size: 15px;
+  color:#FFFFFF;
+  font-weight:bold;
+  margin-top:15px;
+}
+
+.right{
+	background:#EA5149;
+	float: right;
+}
+.left{
+	background:#feb600;
+}
+
+.third{
+	background:#EA5149;
+	float: right;
+}
+.fouth{
+	background:#feb600;
+}
+.itemRoot{
+  background:gainsboro;
+  border:solid 1px red;
+}
+.item{
+  border-bottom:1px solid gainsboro;
+  height:80px;
+}

@@ -1,0 +1,15 @@
+<!--添加数据-->
+
+<view class="container">
+ <view class="right button" bindtap="getData">查询数据</view>
+ <input placeholder='输入添加的名字' bindinput='addName'></input>
+ <input placeholder='输入添加的年龄' bindinput='addAge'></input>
+ <view class="left button" bindtap="addData"> 添加数据</view>
+ <!--删除数据-->
+ <input placeholder='填写要删除的id' bindinput='delDataInput'></input>
+ <view class="third button" bindtap="delData">删除数据</view>
+ <!--更新数据-->
+ <input placeholder='填写要更新的id' bindinput='updDataInput'></input>
+ <input placeholder='输入年龄' bindinput='updAge'></input>
+ <view class="fouth button" bindtap="updData"> 更新数据</view>
+</view>

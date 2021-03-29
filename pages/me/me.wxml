@@ -1,0 +1,15 @@
+<view wx:if="{{!openid}}">
+  <view class="btn-area" id="buttonContainer">
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">登录</button>
+   
+  </view>
+</view>
+
+<view class="uploader-container" wx:if="{{openid}}">
+  <image class="image" src="{{userinfo.avatarUrl}}"></image>
+  <view class="name">{{userinfo.nickName}}</view>
+  <view class="button">查询订单</view>
+  <view class="button">我的订单</view>
+  <view class="button"> 个人信息</view>
+  <view class="button">帮助</view>
+</view>
